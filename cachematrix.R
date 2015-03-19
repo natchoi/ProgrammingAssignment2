@@ -51,7 +51,7 @@ cacheSolve <- function(x = matrix(), ...) {
     }
     
         ## If the inverse has not yet been computed,
-        ## compute the inverse of the matrix
+        ## compute the inverse of the matrix and return it.
     data <- x$get()
     i <- solve(data, ...)
     x$setinverse(i)
